@@ -17,11 +17,11 @@ function MortgageCalculater() {
       return;
     }
     if (loanTerm < 5) {
-      setError("Loan Term must be less than 5 years.");
+      setError("Loan Term must not be less than 5 years.");
       return;
     }
     if (interestRate > 8) {
-      setError("Interest rate must not be greater than 8");
+      setError("Interest rate must not be greater than 8.");
       return;
     }
     const P = parseFloat(loanAmount);
